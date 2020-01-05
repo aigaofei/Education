@@ -1,0 +1,414 @@
+
+<!--
+ @author = 王冠雄
+   @time = 2019/x/xx
+   @project = study_project 
+   @Last Modified by:   王冠雄
+   @Last Modified time: 2019-xx-xx 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+
+      <!-- 清理IE禁止缓存的方法 -->
+      <meta http-equiv='pragma' content='no-cache' />
+	<meta http-equiv='Cache-Control' content='no-cache, must-revalidate' />
+	<meta http-equiv='expires' content='-1' />
+	<!-- IE禁止缓存的方法结束 -->
+      <title>掌门一对一</title>
+      <title>在线一对一辅导_一对一家教_中小学辅导-学霸君1对1官网</title>
+      <meta name="keywords" content="在线一对一辅导,一对一家教,中小学辅导">
+      <meta name="description" content="学霸君1对1官网为您提供在线一对一辅导，一对一家教，中小学辅导。学霸君1对1首席家长海清倾情推荐，真人在线“面对面”互动授课，重现学校教学场景。">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta name="renderer" content="webkit">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" href="favicon .ico"  type="image/x-icon"/>
+	<!-- <link rel="stylesheet" href="JS/bootstrap.min.css">
+	<link rel="stylesheet" href="JS/jquery-ui.min.css"> -->
+			<link rel="stylesheet" href="./CSS/normalize.css">
+			<link rel="stylesheet" href="./icomoon/style.css">
+      <link rel="stylesheet" href="./CSS/study_style.css" />
+      <!-- <link rel="stylesheet" href="./CSS/bootstrap.min.css"> -->
+
+  </head>
+  <body>
+	<!-- 结构 -->
+	<!-- 页面头部分	 -->
+	<header>
+	<!-- nav部分 -->
+		<nav>
+			<!-- logo部分 -->
+			<div class="logo"></div>
+			<!-- 导航栏部分 -->
+			<div class="navbar">
+				<ul>
+					<li><a href="javascript:void(0)">首页</a></li>
+					<li class="clasty"><a href="">课程</a><ul></ul></li>
+					<li>学科规划</li>
+				</ul>
+			</div>
+			<!-- 个人中心部分 -->
+			<div class="personal">		
+				<a href="#">个人中心 <img src="images/ling_06.png"  alt=""></a>
+				<a href="#" id="username"><img src="images/tou_03.png" > 王冠雄</a>
+				<a href="#" id="cancel">退出</a>
+				
+			</div>
+			<!-- 搜索框部分 -->
+			<div class="search">
+				<form action="">
+					<input type="text" value="请输入关键词" >
+					<div id="tpl"></div>
+					<!-- placeholder占位符 内容输入自动清除默认值 -->
+					<input type="submit"  value="">
+				</form>
+			</div>
+		</nav>
+	</header>
+	<div class="fullcover">
+		<div class="inner">
+			<h2>您是否要退出？</h2>
+			<span>是</span>
+			<span>否</span>
+		</div>
+	</div>
+	<div class="requestnet" id="requestnet">
+ 		
+		<div class="inner">
+			<span class="icon-highlight_off icom"></span>
+			<hr><h1>登录学霸君1对1</h1><hr><br/>
+			<input type="text" placeholder="输入用户名"><br>
+			<input type="password" placeholder="输入密码"><br/>
+			<input type="button" value="立即登录">
+			<input type="checkbox" class="checkbo">
+			<span id="register">下次自动登录</span>
+			<a href="" id="passwo"><span>忘记密码</span></a><br/>
+			<a href="#">立即注册 &nbsp;></a>
+		</div>
+	</div>
+	<!-- banner部分 -->
+	<div class="banner">
+		<div class="banner-in" id = "bannerIn"> <img src="./images/2.jpg" alt=""> </div>
+			
+			<!-- 左侧导航栏 侧边栏 -->
+			<div class="slidebar" container>
+				<ul>
+				  <li><a href="#">小学课程 <span>></span> </a></li><span class="slidec">该课程的所有目录摘要</span>
+				  <li><a href="#">初中课程 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+				  <li><a href="#">考试专属 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+				  <li><a href="#">出国留学 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中语文 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中数学 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中英语 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中化学 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中物理 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中生物 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中地理 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中政治 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+					<li><a href="#">高中历史 <span>></span> </a></li><!-- <span>该课程的所有目录摘要</span> -->
+				</ul>
+			</div> 
+				<!-- <div class="slidebar" container>
+				<ul>
+				  <li><a href="#">小学课程 > </a><span class="slidec">该课程的所有目录摘要</span></li>
+				  <li><a href="#">&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+				  <li><a href="#">考试专属&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+				  <li><a href="#">出国留学&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中语文&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中数学&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中英语&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中化学&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中物理&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中生物&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中地理&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中政治&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+					<li><a href="#">高中历史&nbsp;&nbsp; > </a><span>该课程的所有目录摘要</span></li>
+				</ul>
+							</div> -->
+			<!-- 小课表部分 -->
+			<dl class="timetable" container>
+				<dt>我的课程表</dt>
+				<dd>
+					<h4>学生专区</h4>
+					<p>正在学习-使用对象</p>
+				</dd>
+				<dd>
+					<h4>学情管理</h4>
+					<p>正在学习-使用对象</p>
+				</dd>
+				<dd>
+					<h4>好老师服务</h4>
+					<p>正在学习-使用对象</p>
+				</dd>
+			
+				<dd>
+					<a href="#">全部课程</a>
+				</dd>
+			</dl>
+
+			<ul class="circle" container>
+				<li class="current"></li>  <!-- 当前的li -->
+				<li></li>
+			</ul>
+		
+	</div>
+
+	<div class="recommend container"> <!-- 精品推荐 -->
+		<a href="#">精品推荐</a>
+		<a href="#">数学</a>
+		<a href="#">英语</a>
+		<a href="#">写作</a>
+		<a href="#">物理</a>
+		<a href="#">化学</a>
+		<a href="#">政治</a>
+		<a href="#">历年真题</a>
+	</div>
+
+	<!-- 精品推荐大模块 -->
+	<div class="recom-products container">
+		<div class="recom-hd"><!--  精品推荐头部 -->
+			<h4>精品推荐</h4>
+			<a href="#">查看全部</a>
+		</div>
+		<div class="recom-bd clearfix"><!--  精品推荐主体部分 -->
+			<ul>
+				<li>
+					<span class="hot"></span>
+					<div class="over"><img src="images/1.png"  alt=""></div>
+					<h5>用大数据量体裁衣</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+				<span class="hot"></span>
+					<img src="images/6.png"  alt="">
+					<h5>1对1定制学习方案</h5>
+					<p><span>高级</span>  •  2412人在学习</p>
+				</li>
+				<li>
+				<span class="hot"></span>
+					<img src="images/8.png"  alt="">
+					<h5>%3通过率严选全国好老师</h5>
+					<p><span>高级</span>  •  3421人在学习</p>
+				</li>
+				<li>
+					<img src="images/7.png"  alt="">
+					<h5>三大学习报告</h5>
+					<p><span>高级</span>  •  1125人在学习</p>
+				</li>
+				<li>
+					<img src="images/2.png"  alt="">
+					<h5>进阶调整学习规划</h5>
+					<p><span>高级</span>  •  1825人在学习</p>
+				</li>
+				<li>
+					<img src="images/12.jpg"  alt="" id="circle">
+					<h5>4v1超级教学服务</h5>
+					<p><span>高级</span>  •  2125人在学习</p>
+				</li>
+				<li>
+					<img src="images/3.png"  alt="">
+					<h5>360度陪伴孩子学习进步</h5>
+					<p><span>高级</span>  •  1145人在学习</p>
+				</li>
+				<li>
+					<img src="images/4.png"  alt="">
+					<h5>足不出户便捷补习</h5>
+					<p><span>高级</span>  •  1120人在学习</p>
+				</li>
+				<li>
+					<img src="images/13.jpg"  alt="" id="circle">
+					<h5>手机电脑均可上课</h5>
+					<p><span>高级</span>  •  5125人在学习</p>
+				</li>
+				<li>
+					<img src="images/5.png"  alt="">
+					<h5>时续跟进保证孩子学习质量</h5>
+					<p><span>高级</span>  •  6125人在学习</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 底部滚动轮播新闻栏 -->
+	<div class="news container" >
+		<h1>媒体报道品质服务</h1>
+		<p>国内知名媒体竞相报道吹牛-还竞相报道</p>
+		<div class="Cfather">
+			<!-- <span class="tleft"></span>
+			<span class="tright"></span> -->
+			<div class="cover">
+			<div class="carousel">
+				<!-- <div class="carousel"> -->
+					<ul>
+					<a href="">
+						<img src="images/14.png" alt="">
+					</a>
+					<li>
+						<h3>四川电视台|经视新闻11111111</h3>	
+						<span>机器人挑战好考状元</span>
+					</li>
+				</ul>
+				<ul><a href=""><img src="images/15.png" alt=""></a><li><h3>财智对话2222222</h3>	<span>用教育改变100万孩子</span></li></ul>
+				<ul><a href=""><img src="images/16.png" alt=""></a><li><h3>新浪教育333333</h3>	<span>海清畅谈当代教育</span></li></ul>
+				<ul><a href=""><img src="images/17.png" alt=""></a><li><h3>东方卫视|看东方44444444</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/18.png" alt=""></a><li><h3>安徽卫视|每日新闻报555555</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/19.png" alt=""></a><li><h3>BTV新闻|晚间新闻6666666</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<!-- </div> -->
+				<!-- <div class="carouselr"> -->
+					<ul>
+					<a href="">
+						<img src="images/14.png" alt="">
+					</a>
+					<li>
+						<h3>四川电视台|经视新闻77777777</h3>	
+						<span>机器人挑战好考状元</span>
+					</li>
+				</ul>
+				<ul><a href=""><img src="images/15.png" alt=""></a><li><h3>财智对话88888</h3>	<span>用教育改变100万孩子</span></li></ul>
+				<ul><a href=""><img src="images/16.png" alt=""></a><li><h3>新浪教育9999999</h3>	<span>海清畅谈当代教育</span></li></ul>
+				<ul><a href=""><img src="images/17.png" alt=""></a><li><h3>东方卫视|看东方10--10--10</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/18.png" alt=""></a><li><h3>安徽卫视|每日新闻报11-11--11</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/19.png" alt=""></a><li><h3>BTV新闻|晚间新闻--12--12--12</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<!-- </div> -->
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="news container" >
+		<h1>媒体报道品质服务</h1>
+		<p>国内知名媒体竞相报道吹牛-还竞相报道</p>
+		<div class="Cfather">
+			<span class="tleft"></span>
+			<span class="tright"></span>
+			<div class="cover">
+			<div class="carousel">
+				<div class="carousel">
+					<ul>
+					<a href="">
+						<img src="images/14.png" alt="">
+					</a>
+					<li>
+						<h3>四川电视台|经视新闻</h3>	
+						<span>机器人挑战好考状元</span>
+					</li>
+				</ul>
+				<ul><a href=""><img src="images/15.png" alt=""></a><li><h3>财智对话</h3>	<span>用教育改变100万孩子</span></li></ul>
+				<ul><a href=""><img src="images/16.png" alt=""></a><li><h3>新浪教育</h3>	<span>海清畅谈当代教育</span></li></ul>
+				<ul><a href=""><img src="images/17.png" alt=""></a><li><h3>东方卫视|看东方</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/18.png" alt=""></a><li><h3>安徽卫视|每日新闻报</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/19.png" alt=""></a><li><h3>BTV新闻|晚间新闻</h3>	<span>机器人挑战好考状元</span></li></ul>
+				</div>
+				<div class="carouselr">
+					<ul>
+					<a href="">
+						<img src="images/14.png" alt="">
+					</a>
+					<li>
+						<h3>四川电视台|经视新闻</h3>	
+						<span>机器人挑战好考状元</span>
+					</li>
+				</ul>
+				<ul><a href=""><img src="images/15.png" alt=""></a><li><h3>财智对话</h3>	<span>用教育改变100万孩子</span></li></ul>
+				<ul><a href=""><img src="images/16.png" alt=""></a><li><h3>新浪教育</h3>	<span>海清畅谈当代教育</span></li></ul>
+				<ul><a href=""><img src="images/17.png" alt=""></a><li><h3>东方卫视|看东方</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/18.png" alt=""></a><li><h3>安徽卫视|每日新闻报</h3>	<span>机器人挑战好考状元</span></li></ul>
+				<ul><a href=""><img src="images/19.png" alt=""></a><li><h3>BTV新闻|晚间新闻</h3>	<span>机器人挑战好考状元</span></li></ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- 底部滚动轮播新闻栏  结束 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 页面底部分 -->
+	<footer>
+		<div class="container footer-in">
+			<div class="ft-l">
+				<img src="images/logo_03.png" alt="学习君LOGO">
+				<p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br />
+© 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
+				<a href="#">下载APP</a>
+			</div>
+			<div class="ft-r">
+				<dl>
+					<dt>关于学霸君</dt>
+					<dd><a href="#">关于</a></dd>
+					<dd><a href="#">管理团队</a></dd>
+					<dd><a href="#">工作机会</a></dd>
+					<dd><a href="#">客户服务</a></dd>
+					<dd><a href="#">帮助</a></dd>
+				</dl>
+				<dl>
+					<dt>品牌文化</dt>
+					<dd><a href="#">品牌感知</a></dd>
+					<dd><a href="#">优胜公益</a></dd>
+					<dd><a href="#">荣誉展示</a></dd>
+					<dd><a href="#">综合评价</a></dd>
+					<dd><a href="#">志愿填报</a></dd>
+				</dl>
+				<dl>
+					<dt>高考讯息</dt>
+					<dd><a href="#">升学途径</a></dd>
+					<dd><a href="#">院校讯息</a></dd>
+					<dd><a href="#">专业讯息</a></dd>
+					<dd><a href="#">百问百答</a></dd>
+					<dd><a href="#">帮助</a></dd>
+				</dl>
+				<dl>
+					<dt>高考讯息</dt>
+					<dd><a href="#">升学途径</a></dd>
+					<dd><a href="#">院校讯息</a></dd>
+					<dd><a href="#">专业讯息</a></dd>
+					<dd><a href="#">百问百答</a></dd>
+					<dd><a href="#">帮助</a></dd>
+				</dl>
+			</div>
+		</div>
+	</footer>
+  </body>
+</html>
+
+<script src="./JS/jquery-3.4.1.js"></script> 
+<script src="./JS/jquery-1.10.2.js"></script> <!-- jquery-ui的组件 -->
+<script src="./JS/bootstrap.min.js"></script> 
+<script src="./JS/jquery.easing.1.3.js"></script>
+<script src="./JS/template.js"></script>
+<!-- <script src="./JS/search_template.js" id="searTep"></script> -->
+
+<!--[if lt IE 9]>
+
+　　<script src="JS/respond.js/1.4.2/respond.js"></script>
+
+　　<script src="JS/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+<![endif] -->
+<script src="./JS/study.js"></script>
+<!-- <script id="searTep">
+<ul>
+	{{each data.s as value i}}
+		<li>{{value}}</li>
+	{{/each}}
+</ul>
+</script> -->
+
+
+
+
+
+
