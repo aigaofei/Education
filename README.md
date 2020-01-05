@@ -24,7 +24,7 @@
 要摆放在哪里才能实现---也更清楚它们的获取使用console.log($(this)[0]); console.log($(item)[0]); 这是获
 取每一项
 	console.log($(this).attr('i'));   获取每一项的索引属性*/
-    var j = $(this).attr('i');
+        var j = $(this).attr('i');
 	console.log('所在位置的索引'+j);
 	console.log($(this).height()*j);
 	console.log((j*($(this).height())+4));/*'鼠标所在位置的总高度'+*/ 
